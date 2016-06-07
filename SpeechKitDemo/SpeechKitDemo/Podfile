@@ -1,0 +1,21 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'SpeechKitDemo' do
+	
+  #pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git'
+  #pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+  #pod 'ReachabilitySwift', :git => 'https://github.com/ashleymills/Reachability.swift'
+  pod 'SpeechKit', :git => 'https://github.com/ngocbinh02/SpeechKit.git'
+
+end
+
+target 'SpeechKitDemoTests' do
+
+end
+
+target 'SpeechKitDemoUITests' do
+
+end
+

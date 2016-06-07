@@ -1,0 +1,6 @@
+framework module Pods_SpeechKitDemoTests {
+  umbrella header "Pods-SpeechKitDemoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

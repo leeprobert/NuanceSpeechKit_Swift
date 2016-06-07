@@ -1,0 +1,21 @@
+PODS:
+  - SpeechKit (2.1.3)
+
+DEPENDENCIES:
+  - SpeechKit (from `https://github.com/ngocbinh02/SpeechKit.git`)
+
+EXTERNAL SOURCES:
+  SpeechKit:
+    :git: https://github.com/ngocbinh02/SpeechKit.git
+
+CHECKOUT OPTIONS:
+  SpeechKit:
+    :commit: de9edbcc504731838556d4dbbdf51f7229358649
+    :git: https://github.com/ngocbinh02/SpeechKit.git
+
+SPEC CHECKSUMS:
+  SpeechKit: 143b5819a09a3c1d27ebf719faf4305cffa6802d
+
+PODFILE CHECKSUM: df2d498658345c9823c20273944523fb5cd3c4fb
+
+COCOAPODS: 1.0.1
