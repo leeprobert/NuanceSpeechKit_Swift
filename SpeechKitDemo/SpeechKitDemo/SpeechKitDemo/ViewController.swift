@@ -9,21 +9,24 @@
 import UIKit
 import SpeechKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SKTransactionDelegate {
 
     @IBOutlet var recordButton: UIButton!
     @IBOutlet var resultLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        recordButton.setTitle("Listen", forState: .Normal)
     }
     
     @IBAction func btnClicked() {
+        
         recordButton.setTitle("Listening", forState: .Normal)
+        
         let session = SKSession(URL: NSURL(string: "nmsps://NMDPTRIAL_tajy_many_gmail_com20160421150722@sslsandbox.nmdp.nuancemobility.net:443"), appToken: "25758f3a7d733d7c677a3b52fa0126199a329054d5e92f823bdf44aedf413904b6c83f343b7cb0a2f6ebf5f1ec1b0a874d9adb23840aa5bfe9e96dc92aa7cde0")
+        
         session.recognizeWithType(SKTransactionSpeechTypeDictation,
-                                  detection: .Long,
+                                  detection: UInt(SKTransactionEndOfSpeechDetectionShort),
                                   language: "eng-USA",
                                   delegate: self)
     }
